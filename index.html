@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="styling">
     <div class="heading">
       <h1 class="title">2048<sup>pt</sup></h1>
       <div class="scores-container">
@@ -82,6 +82,8 @@
     <p>
     Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">2048 Game.</a> </a>
     </p>
+	
+    <div class="dark-mode-setup">Dark mode: <button type="button" onclick="document.getElementById('styling').style.webkitFilter='hue-rotate(180deg) invert(100%) brightness(120%)'; document.getElementById('styling').style.filter='hue-rotate(180deg) invert(100%) brightness(120%)';">On</button> <button type="button" onclick="document.getElementById('styling').style.webkitFilter='hue-rotate(180deg) invert(100%) brightness(120%)'; document.getElementById('styling').style.filter='hue-rotate(0deg) invert(0%) brightness(100%)';">Off</button></div>
   </div>
 
   <script src="js/bind_polyfill.js"></script>
