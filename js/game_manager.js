@@ -205,8 +205,8 @@ GameManager.prototype.move = function (direction) {
 
           self.updateNumberFinishing();
 
-          // The mighty Z tile
-          if (merged.value === 67108864) self.won = true;
+          // The mighty magnesium tile
+          if (merged.value === 4096) self.won = true;
         } else {
           self.moveTile(tile, positions.farthest);
         }
