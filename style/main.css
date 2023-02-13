@@ -117,7 +117,9 @@ hr {
 
 .container {
   width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  perspective: 100px;
+}
 
 @-webkit-keyframes fade-in {
   0% {
@@ -153,6 +155,7 @@ hr {
   border-radius: 6px;
   width: 500px;
   height: 500px;
+  transform-style: preserve-3d;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
